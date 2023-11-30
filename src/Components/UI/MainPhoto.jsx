@@ -7,7 +7,7 @@ const MainPhoto = () => {
     const details=[
         {
             start:0,
-            end:6,
+            end:14,
             duration:4,
             content:"Yrs of Education",
         },
@@ -75,7 +75,7 @@ const MainPhoto = () => {
                          text-heading text-justify font-[600] leading-6 sm:pl-14 sm:pr-10'>
                             <p id='cont' data-aos='fade-left' data-aos-duration='1500' >
                             <span><i class="ri-apps-2-line"></i></span>{note} 
-                            <button className='text-primary' onClick={content}>{!contents ? "Read More..." : "...Read Less"}</button> </p>
+                            <button className='text-primary pl-2' onClick={content}>{!contents ? "Read More..." : "...Read Less"}</button> </p>
                         </div>
 
                     <div className='w-full h-6 flex items-center gap-3 mt-14'>
