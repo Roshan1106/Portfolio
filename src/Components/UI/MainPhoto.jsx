@@ -1,7 +1,6 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Countup from "react-countup"
 import heroImg from "../../assets/images/Hero1.png"
-import BackGoundImg from "../../assets/images/BackGround.png"
 
 
 const MainPhoto = () => {
@@ -38,8 +37,17 @@ const MainPhoto = () => {
         },
     ]
 
-        
+    const mySelf ="Greetings and a warm welcome!✨ I am thrilled to have you here to read my short and crisp introduction, exploring my creative space and professional journey. This portfolio is a reflection of my passion, dedication, and love for what I do. 😄 On 2003 , 11 of June a very passionate boy wasborn to the couples Ravi Xavier and Arockiya Mary . Yes , Your guess is correct, that's none other than myself. Everyone calls me Roshan and that's my Good name . Basically I'm a 2k kid .I was born and brought up in Sivakasi . And I had B.sc degree in ANJAC , Sivakasi and still in process of exploring .I followed my passion everyday. And I began my new venture of developing my skills. As an initiative, In My college we started a new company named Unijac Technologies by students . And I believe Hardships prepare ordinary people for an extraordinary destiny. But I never ever tried to give up. Basically I'm shrewd in investment so I invested in knowledge to get the best interest"
 
+    const [contents,setContents] = useState(false)
+    const [note,setNote] = useState(mySelf.slice(0, 250));
+
+    const content=(e)=>{
+        setContents(prev=>!prev)
+        setNote(
+            contents ? mySelf.slice(0, 250) : mySelf
+          );
+    }        
   return (
     <section className='pt-0' id='about'>
         <div className="container pt-14">
@@ -62,13 +70,13 @@ const MainPhoto = () => {
                         </a>
                         <a href="#portfolio" className='text-small font-[600] text-[16px] border-b border-solid border-small'> See Portfolio </a>    
                     </div>
-                    <div>
-                    <p data-aos='fade-left' data-aos-duration='1500' className='flex gap-2 mt-14
-                     text-heading font-[500] leading-6 sm:pl-14 sm:pr-10'>
-                        <span><i class="ri-apps-2-line"></i></span>Lorem ipsum dolor 
-                     sit amet consectetur adipisicing elit. Tempore deleniti velit deserunt sed 
-                     doloremque consequatur officia quis accusantium, qui, rerum numquam labore! 
-                     Repellendus quia sit voluptatibus tenetur natus ex? Ipsa.</p>
+                    <div >
+                        <div className='flex gap-2 mt-10
+                         text-heading text-justify font-[600] leading-6 sm:pl-14 sm:pr-10'>
+                            <p id='cont' data-aos='fade-left' data-aos-duration='1500' >
+                            <span><i class="ri-apps-2-line"></i></span>{note} 
+                            <button className='text-primary' onClick={content}>{!contents ? "Read More..." : "...Read Less"}</button> </p>
+                        </div>
 
                     <div className='w-full h-6 flex items-center gap-3 mt-14'>
                         <span className='text-small text-[18px] font-[600]'>Follow Me:</span>
