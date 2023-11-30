@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-            <ul className='flex items-center gap-10 mt-10'>
+            <ul className='flex items-center md:gap-10 gap-4 mt-10'>
                 <li><a className='text-gray-400 font-[600]' href="#about">About</a></li>
                 <li><a className='text-gray-400 font-[600]' href="#service">Service</a></li>
                 <li><a className='text-gray-400 font-[600]' href="#portfolio">Portfolio</a></li>

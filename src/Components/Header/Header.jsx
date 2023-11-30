@@ -1,8 +1,36 @@
-import React from 'react'
+import React,{useRef,useEffect} from 'react'
 
 const Header = () => {
+
+    const headerRef = useRef(null)
+    const menuRef = useRef(null)
+
+    const stickyHeader=()=>{
+        window.addEventListener("scroll",()=>{
+            if(document.body.scrollTop>80||document.documentElement.scrollTop>80)
+            {
+                headerRef.current.classList.add("sticky")
+            }
+            else
+            {
+                headerRef.current.classList.remove("sticky")
+            }
+
+        })
+    }
+
+    const toggle = ()=> menuRef.current.classList.toggle('show_menu')
+
+    useEffect(()=>{
+        stickyHeader();
+
+        return window.removeEventListener("scroll",stickyHeader)
+    },[])
+
+
+
   return (
-    <header className='w-full h-[80px] leading-[80px] flex items-center'>
+    <header ref={headerRef} className='w-full h-[80px] leading-[80px] flex items-center'>
         <div className="container">
             <div className='flex items-center justify-between'>
 
@@ -21,7 +49,7 @@ const Header = () => {
 
                 {/*-------------Menu Start------------*/}
 
-                <div className="menu">
+                <div onClick={toggle} ref={menuRef} className="menu">
                     <ul className='flex items-center gap-10'>
                         <li><a className='text-small font-[600] p-1 border-l-2 border-primary hover:transform hover:origin-left hover:bg-primary hover:text-white hover:text-[18px] duration-300 hover:drop-shadow-2xl hover:shadow-primary' href="#about">About</a></li>
                         <li><a className='text-small font-[600]' href="#service">Service</a></li>
@@ -39,7 +67,7 @@ const Header = () => {
                     <button className='flex items-center gap-2 text-primary font-[600] border border-solid border-small py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-primary hover:text-white hover:font-[500] ease-in duration-500'>
                         <i class="ri-send-plane-line"></i>Let's Talk
                     </button>
-                    <span className='text-2xl text-small md:hidden cursor-pointer'>
+                    <span onClick={toggle} className='text-2xl text-small md:hidden cursor-pointer'>
                         <i class="ri-menu-line"></i>
                     </span>
                 </div>

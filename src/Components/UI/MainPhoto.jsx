@@ -81,8 +81,9 @@ const MainPhoto = () => {
 
                     </div>
                 </div>
-            <div className=''>                
-                <svg id="visual" viewBox="0 0 900 600" width="450" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                {/*-------------Photo Start------------*/}
+            <div className='pt-10'>                
+                <svg id="visual" viewBox="0 0 900 600" width="280" height="240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                     <mask id='mask1' mask-type='alpha' >
                         <path  className='rotate-180' d="M177 -181.7C214.5 -139.5 219.8 -69.8 215.4 -4.4C211.1 61 197.1 122.1 159.6 170.4C122.1 218.8 61 254.4 2.1 252.3C-56.8 250.1 -113.6 210.3 -154.9 161.9C-196.3 113.6 -222.1 56.8 -229.1 -7C-236 -70.7 -224.1 -141.4 -182.8 -183.6C-141.4 -225.8 -70.7 -239.4 -0.5 -238.9C69.8 -238.4 139.5 -223.9 177 -181.7" fill="#8873ef"></path>
                     </mask>
@@ -92,6 +93,7 @@ const MainPhoto = () => {
                     </g>
                 </svg>
             </div>
+                {/*-------------Photo End------------*/}
                 {/*-------------Content Start------------*/}
 
                 <div>
