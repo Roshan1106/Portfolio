@@ -80,10 +80,10 @@ const MainPhoto = () => {
 
                     <div className='w-full h-6 flex items-center gap-3 mt-14'>
                         <span className='text-small text-[18px] font-[600]'>Follow Me:</span>
-                        <span><a href="#linkedin" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500'><i class="ri-linkedin-fill"></i></a></span>
-                        <span><a href="#linkedin" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-black'><i class="ri-github-line"></i></a></span>
-                        <span><a href="#linkedin" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500'><i class="ri-facebook-fill"></i></a></span>
-                        <span><a href="#linkedin" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-red-600'><i class="ri-instagram-line"></i></a></span>
+                        <span><a target="_blank" href="https://www.linkedin.com/in/roshan-david-r-5a748b273" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500'><i class="ri-linkedin-fill"></i></a></span>
+                        <span><a target="_blank" href="https://github.com/Roshan1106" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-black'><i class="ri-github-line"></i></a></span>
+                        <span><a href="https://www.instagram.com/roshan_david_r" target="_blank" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-red-600'><i class="ri-instagram-line"></i></a></span>
+                        <span><a href="https://www.facebook.com/RRoshan%20David" target="_blank" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500'><i class="ri-facebook-fill"></i></a></span>
                         <span><a href="#linkedin" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500 '><i class="ri-twitter-line"></i></a></span>
                     </div>
 
