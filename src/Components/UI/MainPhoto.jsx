@@ -1,6 +1,8 @@
-import React,{useState} from 'react'
+import React, { useEffect } from 'react';
+import {useState} from 'react'
 import Countup from "react-countup"
 import heroImg from "../../assets/images/Hero1.png"
+import dot from "../../assets/images/dot.json"
 
 
 const MainPhoto = () => {
@@ -42,6 +44,22 @@ const MainPhoto = () => {
     const [contents,setContents] = useState(false)
     const [note,setNote] = useState(mySelf.slice(0, 250));
 
+
+
+        // useEffect(() => {
+        //   const animationContainer = document.getElementById('about');
+        //   const anim = lottie.loadAnimation({
+        //     container: animationContainer,
+        //     renderer: 'svg',
+        //     loop: true,
+        //     autoplay: true,
+        //     animationData: dot,
+        //   });
+      
+        //   return () => anim.destroy();
+        // }, []);
+
+
     const content=(e)=>{
         setContents(prev=>!prev)
         setNote(
@@ -52,7 +70,6 @@ const MainPhoto = () => {
     <section className='pt-0' id='about'>
         <div className="container pt-14">
             <div className='md:flex items-center justify-between sm:flex-row'>
-                
                 <div className='w-full  md:basis-1/2'>
 
                     <h5 data-aos='fade-right' data-aos-duration='1500' className='text-heading font-[600]
@@ -104,20 +121,18 @@ const MainPhoto = () => {
                 {/*-------------Photo End------------*/}
                 {/*-------------Content Start------------*/}
 
-                <div>
+                <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0
+                md:flex-col md:justify-end md:text-end'>
                 {
                     details.map(({start,end,duration,content})=>{
-                        return <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0
-                        md:flex-col md:justify-end md:text:end'>
-                            <div className='mb-10'>
-                                <h2 className='text-heading font-[700] text-[32px]'>
-                                    <Countup start={start} end={end} duration={duration} suffix='+' />
-                                </h2>
-                                <h4 className='text-heading font-[500] text-[18px]'>
-                                    {content}
-                                </h4>
-                            </div>
-                        </div>
+                        return <div className='mb-10'>
+                                    <h2 className='text-heading font-[700] text-[32px]'>
+                                        <Countup start={start} end={end} duration={duration} suffix='+' />
+                                    </h2>
+                                    <h4 className='text-heading font-[500] text-[18px]'>
+                                        {content}
+                                    </h4>
+                                </div>
                     })
                 }
                 </div>

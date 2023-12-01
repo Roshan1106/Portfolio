@@ -5,6 +5,7 @@ import Header from './Components/Header/Header'
 import MainPhoto from './Components/UI/MainPhoto'
 import Service from './Components/UI/Service'
 import Contact from './Components/UI/Contact'
+import Tools from './Components/UI/Tools'
 import './App.css' 
 import Portfolio from './Components/UI/Portfolio'
  
@@ -19,6 +20,7 @@ function App() {
       <Header/>
       <>
         <MainPhoto/>
+        <Tools/>
         <Service/>
         <Portfolio/>
         <Contact/>
