@@ -48,7 +48,7 @@ const Service = () => {
                                 className='bg-white p-4 rounded shadow group hover:bg-primary cursor-pointer ease-in duration-200'>
                                     <h3 className='text-primary font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-2xl leading-7'>
                                         Front-End Development </h3>
-                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate atque mollitia perspiciatis harum iste nostrum recusandae quam, cum eos! Quisquam?</p>
+                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'></p>
                                 </div>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ const Service = () => {
                                 <div data-aos='fade-right' data-aos-duration='1200'
                                 className='bg-white p-4 rounded shadow group hover:bg-primary cursor-pointer ease-in duration-200'>
                                     <h3 className='text-primary font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-2xl leading-7'>
-                                        Front-End Development </h3>
-                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate atque mollitia perspiciatis harum iste nostrum recusandae quam, cum eos! Quisquam?</p>
+                                        Back-End Development </h3>
+                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'></p>
                                 </div>
                             </div>
                         </div>
@@ -90,8 +90,8 @@ const Service = () => {
                                 <div data-aos='fade-left' data-aos-duration='1200'
                                 className='bg-white p-4 rounded shadow group hover:bg-primary cursor-pointer ease-in duration-200'>
                                     <h3 className='text-primary font-[700] mb-3 group-hover:text-white group-hover:font-[700] text-2xl leading-7'>
-                                        Front-End Development </h3>
-                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate atque mollitia perspiciatis harum iste nostrum recusandae quam, cum eos! Quisquam?</p>
+                                        Tools </h3>
+                                        <p className='text-[15px] text-small group-hover:text-white group-hover:font-[500]'></p>
                                 </div>
                             </div>
                         </div>

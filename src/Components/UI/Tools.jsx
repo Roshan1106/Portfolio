@@ -8,7 +8,7 @@ const Tools = () => {
         <div className='container'>
             <div className='flex-col items-center justify-center'>
                 <div className='max-w-full flex flex-col lg:flex-row justify-center items-center'>
-                    <div className='border-2 lg:w-[23%] h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
+                    <div className='border-2 lg:w-[23%] lg:h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
                         <h2 className='text-[30px] font-[600] text-heading text-center mb-3'>Front-End</h2>
                         <div className='flex-wrap flex items-center justify-center'>
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1 '><span className='md:text-3xl text-xl text-blue-400 font-[300]'><i class="ri-reactjs-fill"></i></span>ReactJs</span>
@@ -21,7 +21,7 @@ const Tools = () => {
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1  flex flex-row justify-center'><span className='pr-2'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/1039px-Vitejs-logo.svg.png" width={25} alt="" /></span>Vite JS</span>
                         </div>
                     </div>
-                    <div className='border-2 lg:w-[23%] w-full h-[420px] rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
+                    <div className='border-2 lg:w-[23%] w-full lg:h-[420px] rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
                         <h2 className='text-[30px] font-[600] text-heading text-center mb-3'>Back-End</h2>
                         <div className='flex-wrap flex items-center justify-center'>
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1 flex flex-row justify-center '><span className='pr-2 pt-1'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width={30} alt="" /></span>Node JS</span>
@@ -32,7 +32,7 @@ const Tools = () => {
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-5 py-3 flex flex-row justify-center '><span className=''><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/2560px-Oracle_logo.svg.png" width={80} alt="" /></span></span>
                         </div>
                     </div>
-                    <div className='border-2 lg:w-[23%] h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
+                    <div className='border-2 lg:w-[23%] lg:h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
                         <h2 className='text-[30px] font-[600] text-heading text-center mb-3'>Programming Languages</h2>
                         <div className='flex-wrap flex items-center justify-center'>
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1 flex flex-row justify-center '><span className=''><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" width={50} alt="" /></span></span>
@@ -42,7 +42,7 @@ const Tools = () => {
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1 flex flex-row justify-center '><span className=''><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" width={50} alt="" /></span></span>
                         </div>
                     </div>
-                    <div className='border-2 lg:w-[23%] h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
+                    <div className='border-2 lg:w-[23%] lg:h-[420px] w-full rounded-xl border-primary shadow-lg shadow-primary text-heading m-2 p-5'>
                         <h2 className='text-[30px] font-[600] text-heading text-center mb-3'>Others</h2>
                         <div className='flex-wrap flex items-center justify-center'>
                             <span className='border-2 border-black mx-1 my-2 text-md font-[500] rounded-lg px-2 py-1 flex flex-row justify-center'><span className='pr-2'><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width={25} alt=""/></span>Git</span>
