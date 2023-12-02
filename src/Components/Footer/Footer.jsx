@@ -58,7 +58,7 @@ const Footer = () => {
                   </div>
               <div>
                 <p className='text-gray-300 text-[15px]'>
-                    Copyright 2023 Developed by Roshan💙 - All right reserved.
+                <i class="ri-copyright-line"></i> Copyright 2023 Developed by Roshan💙 - All right reserved.
                 </p>
               </div>
               </div>

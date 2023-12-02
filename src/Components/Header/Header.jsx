@@ -27,7 +27,7 @@ const Header = () => {
         return window.removeEventListener("scroll",stickyHeader)
     },[])
 
-
+    const style ="text-small font-[600] hover:transform hover:origin-left hover:text-primary hover:text-[18px] duration-300";
 
   return (
     <header ref={headerRef} className='w-full h-[80px] leading-[80px] flex items-center'>
@@ -51,10 +51,10 @@ const Header = () => {
 
                 <div onClick={toggle} ref={menuRef} className="menu">
                     <ul className='flex items-center gap-10'>
-                        <li><a className='text-small font-[600] p-1 border-l-2 border-primary hover:transform hover:origin-left hover:bg-primary hover:text-white hover:text-[18px] duration-300 hover:drop-shadow-2xl hover:shadow-primary' href="#about">About</a></li>
-                        <li><a className='text-small font-[600]' href="#service">Service</a></li>
-                        <li><a className='text-small font-[600]' href="#portfolio">Portfolio</a></li>
-                        <li><a className='text-small font-[600]' href="#contact">Contact</a></li>
+                        <li><a className={style} href="#about">About</a></li>
+                        <li><a className={style} href="#service">Service</a></li>
+                        <li><a className={style} href="#portfolio">Portfolio</a></li>
+                        <li><a className={style} href="#contact">Contact</a></li>
                     </ul>
                 </div>
 

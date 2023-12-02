@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import {useState} from 'react'
+import React, { useEffect, useState, useRef } from 'react';
 import Countup from "react-countup"
-import heroImg from "../../assets/images/Hero.png"
-import dot from "../../assets/images/dot.json"
-
+import heroImg from "../../assets/images/profile1.png"
+import heroImg1 from "../../assets/images/profile2.jpg"
 
 const MainPhoto = () => {
+
+    const ref = useRef();
+
     const details=[
         {
             start:0,
@@ -47,9 +48,9 @@ const MainPhoto = () => {
 
 
         // useEffect(() => {
-        //   const animationContainer = document.getElementById('about');
-        //   const anim = lottie.loadAnimation({
-        //     container: animationContainer,
+        //     const element = ref.current;
+        //   const anim = Lottie.loadAnimation({
+        //     container: element,
         //     renderer: 'svg',
         //     loop: true,
         //     autoplay: true,
@@ -68,7 +69,7 @@ const MainPhoto = () => {
     }        
   return (
     <section className='pt-0' id='about'>
-        <div className="container pt-14">
+        <div className="container pt-5">
             <div className='md:flex items-center justify-between sm:flex-row'>
                 <div className='w-full  md:basis-1/2'>
 
@@ -95,7 +96,7 @@ const MainPhoto = () => {
                             <button className='text-primary pl-2' onClick={content}>{!contents ? "Read More..." : "...Read Less"}</button> </p>
                         </div>
 
-                    <div className='w-full h-6 flex items-center gap-3 mt-14'>
+                    <div className='w-full h-6 flex items-center gap-3 mt-7'>
                         <span className='text-small text-[18px] font-[600]'>Follow Me:</span>
                         <span><a target="_blank" href="https://www.linkedin.com/in/roshan-david-r-5a748b273" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-blue-500'><i class="ri-linkedin-fill"></i></a></span>
                         <span><a target="_blank" href="https://github.com/Roshan1106" className='text-small text-[18px] font-[600] hover:text-[24px] duration-300 hover:text-black'><i class="ri-github-line"></i></a></span>
@@ -118,9 +119,9 @@ const MainPhoto = () => {
                         </g>
                     </svg>
                 </div> */}
-                <div>
-                    <div className='flex items-center justify-center border-2 border-heading rounded-full overflow-hidden w-[270px] h-[270px]'>
-                    <img src={heroImg} alt=""/>
+                <div className='pt-5'>
+                    <div className='flex items-center bg-primary justify-center border-2 border-black rounded-full overflow-hidden w-[270px] h-[270px]'>
+                    <img src={heroImg} className='pt-[40px]' alt=""/>
                     </div>
                 </div>
                 {/*-------------Photo End------------*/}

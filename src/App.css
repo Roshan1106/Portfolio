@@ -51,7 +51,7 @@ section{
         display: none;
     }
     .menu ul{
-        width: 15rem;
+        width: 10rem;
         height: 100%;
         position: absolute;
         top: 0;
@@ -67,3 +67,8 @@ section{
         display: block;
     }
 }
+
+.shadow-text {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  
