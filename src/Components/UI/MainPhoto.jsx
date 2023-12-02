@@ -3,6 +3,8 @@ import Countup from "react-countup"
 import heroImg1 from "../../assets/images/HeroImg.jpg"
 import heroImg2 from "../../assets/images/Hero.png"
 import heroImg3 from "../../assets/images/profile1.png"
+import heroImg4 from "../../assets/images/profile2.jpg"
+import heroImg5 from "../../assets/images/profile3.png"
 
 const MainPhoto = () => {
 
@@ -110,8 +112,8 @@ const MainPhoto = () => {
                 </div>
                 {/*-------------Photo Start------------*/}
                 <div className='pt-5'>
-                    <div className='flex items-center justify-center border-2 border-black rounded-full overflow-hidden w-[270px] h-[270px]'>
-                    <img src={heroImg2} className='pt-[40px]' alt=""/>
+                    <div className='flex items-center justify-center border-2 border-black rounded-full overflow-hidden w-[300px] h-[300px]'>
+                        <img src={heroImg4} className='w-[100%] pt-16' alt=""/>
                     </div>
                 </div>
                 {/*-------------Photo End------------*/}
