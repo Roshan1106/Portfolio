@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Countup from "react-countup"
-import heroImg from "../../assets/images/profile1.png"
-import heroImg1 from "../../assets/images/profile2.jpg"
+import heroImg1 from "../../assets/images/HeroImg.jpg"
+import heroImg2 from "../../assets/images/Hero.png"
+import heroImg3 from "../../assets/images/profile1.png"
 
 const MainPhoto = () => {
 
@@ -108,20 +109,9 @@ const MainPhoto = () => {
                     </div>
                 </div>
                 {/*-------------Photo Start------------*/}
-                {/* <div className='pt-10'>                
-                    <svg id="visual" viewBox="0 0 900 600" width="280" height="240" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                        <mask id='mask1' mask-type='alpha' >
-                            <path  className='rotate-180' d="M177 -181.7C214.5 -139.5 219.8 -69.8 215.4 -4.4C211.1 61 197.1 122.1 159.6 170.4C122.1 218.8 61 254.4 2.1 252.3C-56.8 250.1 -113.6 210.3 -154.9 161.9C-196.3 113.6 -222.1 56.8 -229.1 -7C-236 -70.7 -224.1 -141.4 -182.8 -183.6C-141.4 -225.8 -70.7 -239.4 -0.5 -238.9C69.8 -238.4 139.5 -223.9 177 -181.7" fill="#8873ef"></path>
-                        </mask>
-                        <g mask='url(#mask1)' transform="translate(457.1173799333975 293.262470263615)">
-                            <path  className='rotate-180' d="M177 -181.7C214.5 -139.5 219.8 -69.8 215.4 -4.4C211.1 61 197.1 122.1 159.6 170.4C122.1 218.8 61 254.4 2.1 252.3C-56.8 250.1 -113.6 210.3 -154.9 161.9C-196.3 113.6 -222.1 56.8 -229.1 -7C-236 -70.7 -224.1 -141.4 -182.8 -183.6C-141.4 -225.8 -70.7 -239.4 -0.5 -238.9C69.8 -238.4 139.5 -223.9 177 -181.7" fill="#8873ef"></path>
-                            <image href={heroImg} x='-200' y='-200' className='w-[450px]' />
-                        </g>
-                    </svg>
-                </div> */}
                 <div className='pt-5'>
-                    <div className='flex items-center bg-primary justify-center border-2 border-black rounded-full overflow-hidden w-[270px] h-[270px]'>
-                    <img src={heroImg} className='pt-[40px]' alt=""/>
+                    <div className='flex items-center justify-center border-2 border-black rounded-full overflow-hidden w-[270px] h-[270px]'>
+                    <img src={heroImg2} className='pt-[40px]' alt=""/>
                     </div>
                 </div>
                 {/*-------------Photo End------------*/}

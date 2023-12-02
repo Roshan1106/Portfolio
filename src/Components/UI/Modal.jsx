@@ -7,7 +7,7 @@ const Modal = ({activeID,setShowModal}) => {
 
   return (
     <div className='w-full h-full fixed top-0 left-0 z-10 border-heading bg-black bg-opacity-70'>
-        <div className='max-w-[600] max-h-[600] w-[400px] h-auto absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px]
+        <div className='max-w-[600] max-h-[600] w-[400px] absolute top-1/2 left-1/2 z-20 bg-white rounded-[8px]
         transform -translate-x-1/2 -translate-y-1/2 p-5'>
             <div>
                 <figure className='flex items-center justify-center'>
