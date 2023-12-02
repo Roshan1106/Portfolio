@@ -25,15 +25,15 @@ const Portfolio = () => {
             setportfolios(data)
         }
 
-        if(selectTab==='web-design')
+        if(selectTab==='projects')
         {
-            const filteredData  = data.filter(item=>item.category==='Web Design')
+            const filteredData  = data.filter(item=>item.category==='projects')
             setportfolios(filteredData)
         }
 
-        if(selectTab==='ux-design')
+        if(selectTab==='certificate')
         {
-            const filteredData  = data.filter(item=>item.category==='Ux')
+            const filteredData  = data.filter(item=>item.category==='certificate')
             setportfolios(filteredData)
         }
 
@@ -47,7 +47,7 @@ const Portfolio = () => {
 
                 <div className='mb-7 sm:mb-0'>
                     <h3 className='text-heading text-[2rem] font-[700]'>
-                        My Recent Demo Projects
+                        My Projects & Certificates
                     </h3>
                 </div>
 
@@ -61,17 +61,17 @@ const Portfolio = () => {
                     </button>
 
                     <button
-                    onClick={()=>setSelectTab('web-design')}
+                    onClick={()=>setSelectTab('projects')}
                     className='text-small border border-solid border-small py-2 px-4
                     rounded-[8px]'>
-                        Web Design
+                        Projects
                     </button>
 
                     <button 
-                    onClick={()=>setSelectTab('ux-design')}
+                    onClick={()=>setSelectTab('certificate')}
                     className='text-small border border-solid border-small py-2 px-4
                     rounded-[8px]'>
-                        UI/UX Design
+                        Certificates
                     </button>
 
                 </div>
@@ -87,7 +87,7 @@ const Portfolio = () => {
                         data-aos='fade-zoom-in' 
                         data-aos-delay='50' 
                         data-aos-duration='1000' 
-                        className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
+                        className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1] p-5'>
                             <figure>
                                 <img className='rounded-[8px]' src={port.imgUrl} alt="" />
                             </figure>

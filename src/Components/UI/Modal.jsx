@@ -21,12 +21,13 @@ const Modal = ({activeID,setShowModal}) => {
                 <p className='text-[14px] leading-6 text-small'>
                     {portfolio.description}
                 </p>
-                <div className='mt-5 flex items-center gap-3 flex-wrap'>
+                {
+                    (portfolio.technologies.length!=0) ? <><div className='mt-5 flex items-center gap-3 flex-wrap'>
                     <h4 className='text-heading text-[18px] text-[600]'>
                         Technoloiges
                     </h4>
                     {
-                        portfolio.technologies?.map((item,index)=>{
+                        portfolio?.technologies?.map((item,index)=>{
                             return<span key={index} className='bg-gray-200 py-1 px-2 rounded-[5px] text-[14px]
                             leading-4'>{item}</span>
                         })
@@ -35,7 +36,8 @@ const Modal = ({activeID,setShowModal}) => {
                 <a href={portfolio.siteUrl}>
                     <button className='bg-primary text-white py-2 px-4 mt-4 rounded-[8px] font-[500]
                     hover:bg-heading ease-in duration-300'>Live Site</button>
-                </a>
+                </a></>
+                :""}
             </div>
             <button 
             onClick={()=>setShowModal(false)}
