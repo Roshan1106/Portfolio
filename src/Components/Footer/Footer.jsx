@@ -20,11 +20,11 @@ const Footer = () => {
             </p>
             <div className='flex items-center gap-4 flex-wrap md:gap-8 mt-10'>
                         <span className='text-gray-300 text-[18px] font-[600]'>Follow Me:</span>
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-blue-500'><i class="ri-linkedin-fill"></i></a></span>
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-black'><i class="ri-github-line"></i></a></span>
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-blue-500'><i class="ri-facebook-fill"></i></a></span>
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-red-600'><i class="ri-instagram-line"></i></a></span>
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-blue-500 '><i class="ri-twitter-line"></i></a></span>
+                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="https://www.linkedin.com/in/roshan-david-r-5a748b273" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-blue-500'><i class="ri-linkedin-fill"></i></a></span>
+                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="https://github.com/Roshan1106" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-black'><i class="ri-github-line"></i></a></span>
+                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="https://www.facebook.com/RRoshan%20David" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-blue-500'><i class="ri-facebook-fill"></i></a></span>
+                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="https://www.instagram.com/roshan_david_r" className=' text-gray-300 text-[18px] font-[500] duration-300   hover:text-red-600'><i class="ri-instagram-line"></i></a></span>
+                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'><a href="#linkedin" className=' text-gray-300 text-[18px] font-[500] duration-300  hover:text-blue-500 '><i class="ri-twitter-line"></i></a></span>
                     </div>
           </div>
         </div>
