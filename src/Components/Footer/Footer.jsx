@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className='w-full sm:w-1/2'>
             <p className='text-gray-300 leading-7 mt-4 sm:mt-0'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam itaque magni sunt temporibus autem facilis sapiente repudiandae veritatis iusto reprehenderit?
+            “Good code is its own best documentation. As you're about to add a comment, ask yourself, "How can I improve the code so that this comment isn't needed?" Improve the code and then document it to make it even clearer.” - Steve McConnell
             </p>
             <div className='flex items-center gap-4 flex-wrap md:gap-8 mt-10'>
                         <span className='text-gray-300 text-[18px] font-[600]'>Follow Me:</span>
